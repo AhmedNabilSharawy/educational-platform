@@ -1,52 +1,82 @@
-site_name: KnowledgeCity Architecture
-site_description: Documentation for the multi-regional cloud-native KnowledgeCity platform
-site_author: Your Name
+site_name: KnowledgeCity Platform Documentation
+site_url: https://<your-github-username>.github.io/<your-repo-name>/
+site_author: KnowledgeCity DevOps Team
+site_description: Multi-regional, scalable, cloud-native documentation for a video learning platform.
+
 theme:
   name: material
+  logo: images/logo.png
+  favicon: images/favicon.ico
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
   features:
-    - navigation.sections
+    - navigation.tabs
     - navigation.top
     - content.code.copy
     - content.tabs.link
-    - search.suggest
-    - search.highlight
-    - search.share
+    - content.action.edit
+    - navigation.footer
 
 nav:
   - Home: index.md
-  - Architecture:
-      - Overview: architecture.md
-      - Multi-Region Design: multi-region.md
-      - Data Distribution: data-distribution.md
-      - Scalability: scalability.md
-      - Security: security.md
-      - Compliance: compliance.md
-  - Components:
-      - Frontend: frontend.md
-      - Monolith (PHP): monolith.md
-      - Microservices: 
-          - Analytics: analytics.md
-          - Video Processing: video-processing.md
-          - Media Handling: media.md
-          - Video Delivery: video.md
-  - DevOps & Tooling:
-      - CI/CD: ci-cd.md
-      - Observability: observability.md
-      - Tooling & Stack: tooling.md
-  - Planning:
+  - Platform Overview:
+      - Architecture: architecture.md
+      - High-Level Diagram: high-level.png
+      - Future: future.md
       - Future Expansion: future-expansion.md
-      - Future Considerations: future.md
+  - Infrastructure:
+      - Scalability: scalability.md
+      - Multi-Region: multi-region.md
+      - Observability: observability.md
+      - Compliance: compliance.md
+  - Applications:
+      - Monolith: monolith.md
+      - Frontend: frontend.md
+      - Analytics: analytics.md
+      - Media: media.md
+      - Video: video.md
+      - Video Processing: video-processing.md
+  - DevOps:
+      - CI/CD: ci-cd.md
+      - Data Distribution: data-distribution.md
+      - Security: security.md
 
 markdown_extensions:
   - admonition
-  - codehilite
   - toc:
       permalink: true
+  - codehilite:
+      guess_lang: false
   - footnotes
+  - tables
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.details
-  - pymdownx.tasklist
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.highlight
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_css:
+  - stylesheets/custom.css  # Optional
+
+extra_javascript:
+  - javascripts/custom.js   # Optional
+
+repo_url: https://github.com/<your-github-username>/<your-repo-name>
+repo_name: GitHub
+edit_uri: blob/main/docs/
 
 plugins:
   - search

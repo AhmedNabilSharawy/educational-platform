@@ -2,6 +2,9 @@
 
 The KnowledgeCity platform is designed to be a cloud-native, multi-regional, and highly available system capable of serving users from different parts of the world with low latency and strong regional compliance.
 
+![High-Level Architecture](high-level.png)
+
+
 ## Core Principles
 
 - **Multi-Regional Deployment**: U.S. and Saudi Arabia are used as primary regions.

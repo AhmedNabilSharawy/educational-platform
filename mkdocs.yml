@@ -29,7 +29,6 @@ nav:
   - Platform Overview:
       - Architecture: architecture.md
       - High-Level Diagram: high-level.png
-      - Future: future.md
       - Future Expansion: future-expansion.md
   - Infrastructure:
       - Scalability: scalability.md

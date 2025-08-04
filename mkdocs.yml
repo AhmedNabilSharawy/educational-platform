@@ -1,5 +1,4 @@
 site_name: KnowledgeCity Platform Documentation
-site_url: https://<your-github-username>.github.io/<your-repo-name>/
 site_author: KnowledgeCity DevOps Team
 site_description: Multi-regional, scalable, cloud-native documentation for a video learning platform.
 
@@ -74,7 +73,6 @@ extra_css:
 extra_javascript:
   - javascripts/custom.js   # Optional
 
-repo_url: https://github.com/<your-github-username>/<your-repo-name>
 repo_name: GitHub
 edit_uri: blob/main/docs/
 

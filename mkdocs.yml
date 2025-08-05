@@ -40,7 +40,7 @@ nav:
       - Monolith: monolith.md
       - Analytics: analytics.md
       - Video Processing: video-processing.md
-  - DevOps:
+  - CI/CD Strategy:
       - CI/CD: ci-cd.md
       - Data Distribution: data-distribution.md
       - Security: security.md

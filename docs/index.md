@@ -2,7 +2,7 @@
 
 Welcome to the documentation for the KnowledgeCity multi-regional, scalable, and highly available cloud-native platform architecture.
 
-![](images/banner.jpg)
+![](images/banner.png)
 
 ## Contents
 

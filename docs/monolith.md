@@ -1,7 +1,6 @@
 # Monolithic PHP Application
 
-The core of the KnowledgeCity platform’s business logic is handled by a monolithic PHP application, responsible for user authentication, content management, billing, and other centralized features.
-
+The core of the KnowledgeCity platform’s business logic is handled by a monolithic PHP application.
 ## Deployment
 
 - **Containerized in Docker**: The application is packaged as a Docker image for consistency and portability.

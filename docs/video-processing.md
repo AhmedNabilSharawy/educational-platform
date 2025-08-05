@@ -12,7 +12,7 @@ This microservice handles the upload, conversion, and global delivery of educati
 
 ## Architecture Highlights
 
-- **Scalability**: The transcoding service runs on a serverless container model (e.g., Fargate or EKS with HPA).
+- **Scalability**: The transcoding service runs on a serverless container model (EKS with HPA).
 - **Storage Class Strategy**:
   - Frequent Access: Intelligent-Tiering for active courses.
   - Archive: S3 Glacier for deprecated or low-traffic videos.
@@ -27,8 +27,7 @@ When a user watches a video:
 
 ## Compliance
 
-- Videos are stored and served based on regional regulations.
-- U.S. and Saudi Arabia maintain separate S3 buckets to respect data sovereignty.
+User data (e.g., profiles, progress, preferences, transactions) is stored in Amazon RDS, replicated and backed up per-region to meet data privacy and compliance requirements.
 
 ---
 

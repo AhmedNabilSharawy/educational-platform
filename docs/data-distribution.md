@@ -26,16 +26,13 @@ Each region operates independently but in coordination with:
 
 - **Route53** uses **Geo DNS** or **Latency-based Routing** to direct traffic to the user’s nearest region.
 - **CloudFront CDN** accelerates delivery by caching content at global edge locations.
-- CDN TTLs and regional cache invalidation ensure updated content propagation.
-
 ---
 
 ## 🔁 High Availability (99.99% SLA)
 
 - Every region uses **Multi-AZ deployment** for:
   - EKS worker nodes.
-  - RDS instances (with failover support).
-  - Load balancers and NAT gateways.
+  - RDS instances.
 - Traffic can shift between AZs automatically in case of failure.
 
 ---
@@ -46,13 +43,6 @@ Each region operates independently but in coordination with:
   - Deploying duplicate infrastructure via IaC (Terraform).
   - Using CI/CD to bootstrap services.
   - Configuring S3 replication and Route53 rules.
-
----
-
-## ✅ Compliance
-
-- Satisfies regional regulations like **Saudi PDPL** and **U.S. data protection** standards.
-- Future-proofed to handle GDPR and similar laws if expansion occurs in Europe or elsewhere.
 
 ---
 

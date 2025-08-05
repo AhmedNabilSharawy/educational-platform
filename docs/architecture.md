@@ -18,21 +18,10 @@ The KnowledgeCity platform is designed to be a cloud-native, multi-regional, and
 - **Backend (Monolith)**: A PHP application hosted in Amazon EKS, handling core logic.
 - **Microservices**: Analytics, video conversion, and other domain-specific services in EKS.
 - **Storage**: Amazon S3 with cross-region replication and intelligent tiering.
-- **Databases**: ClickHouse for analytics, RDS/Aurora for structured app data.
+- **Databases**: ClickHouse for analytics, RDS for structured app data.
 - **Event Bus**: Amazon EventBridge used for decoupled, event-driven architecture.
 - **Global CDN**: Ensures fast delivery of video and frontend assets.
 
-## Deployment Topology
-
-```
-+-----------------+         +------------------+         +-----------------+
-|   U.S. Region   |         |  Global Delivery |         | Saudi Region    |
-|-----------------|         |------------------|         |-----------------|
-| S3 + CloudFront | <-----> |   CloudFront     | <-----> | S3 + CloudFront |
-| EKS Clusters    |         |   Route53        |         | EKS Clusters    |
-| RDS, ClickHouse |         |                  |         | RDS, ClickHouse |
-+-----------------+         +------------------+         +-----------------+
-```
 
 ## Reliability and Redundancy
 

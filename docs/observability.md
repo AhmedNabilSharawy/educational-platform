@@ -36,8 +36,7 @@ Alertmanager (from Prometheus stack) will be configured with thresholds and anom
 
 ### Notification Channels
 - Email
-- Slack or Microsoft Teams
-- PagerDuty for critical outages
+- Slack
 
 ## Integration with Security
 
@@ -45,12 +44,6 @@ Observability supports security by:
 - **Detecting DDoS patterns** via traffic anomaly monitoring.
 - **Auditing access logs** to sensitive data paths.
 - **Tracing breaches** across service boundaries.
-
-## Compliance and Forensics
-
-- **Log Retention Policies**: Tailored per region to match regulatory standards.
-- **Immutability of Logs**: Achieved via S3 Object Lock and KMS encryption.
-- **Audit Dashboards**: For access, error patterns, and recovery events.
 
 ---
 

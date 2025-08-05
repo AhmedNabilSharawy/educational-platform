@@ -2,8 +2,6 @@
 
 Welcome to the documentation for the KnowledgeCity multi-regional, scalable, and highly available cloud-native platform architecture.
 
-This site documents the high-level design, individual components, deployment strategies, and the rationale behind key architectural decisions.
-
 ## Contents
 
 - [High-Level Architecture](architecture.md)
@@ -20,6 +18,4 @@ This site documents the high-level design, individual components, deployment str
 ---
 
 For a visual walkthrough of the architecture, refer to the [Architecture Overview](architecture.md).
-
-> This documentation is maintained by the DevOps and Platform team. For contributions or suggestions, please create a pull request or open an issue.
 

@@ -24,8 +24,6 @@ This section describes how the platform is designed to scale efficiently while o
 
 - Infrastructure-as-Code (IaC) using Terraform or Pulumi makes it easy to replicate stacks in new regions.
 - Multi-region Route53 policies (Latency-based routing, GeoDNS) for optimal user redirection.
-- Decoupled architecture ensures services and databases can be expanded regionally.
-
 ---
 
 ## 💰 Cost Optimization Strategies

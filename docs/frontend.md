@@ -15,7 +15,7 @@ Users from different regions (e.g., Saudi Arabia and the U.S.) are automatically
 
 ## High Availability
 
-- **Static hosting on S3**: Inherently resilient and scalable.
+- **Static hosting on S3**: resilient, fast, scalable and cost effective.
 - **CloudFront Caching**: Ensures reduced load times and fault tolerance.
 - **Deployed in multiple regions**: For redundancy and compliance.
 

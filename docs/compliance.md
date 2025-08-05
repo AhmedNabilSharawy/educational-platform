@@ -4,18 +4,13 @@ To meet regional legal requirements and enterprise-grade data protection, the ar
 
 ## Data Residency
 
-- **Saudi Arabia**: Saudi user data is stored and processed exclusively within AWS Middle East (Riyadh) region.
+- **Saudi Arabia**: Saudi user data is stored and processed exclusively within AWS Middle East region.
 - **United States**: U.S. user data is isolated within AWS US-East or US-West regions.
 - **Storage Isolation**: Separate databases, S3 buckets, and logs per region to enforce data boundaries.
 
-## Regulatory Standards
-
-- **Saudi Compliance**: Aligns with SDAIA/NCA policies including SAMA and PDPL.
-- **U.S. Compliance**: Supports SOC 2, HIPAA, and FERPA where applicable.
-
 ## Data Protection
 
-- **At Rest**: All storage encrypted using AWS KMS-managed CMKs.
+- **At Rest**: All storage encrypted using AWS KMS-managed Keys.
 - **In Transit**: Enforced TLS 1.2+ across services and APIs.
 - **Backup & Retention**: Automated daily backups with regionally enforced retention periods.
 

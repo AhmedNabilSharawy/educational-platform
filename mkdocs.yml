@@ -36,11 +36,9 @@ nav:
       - Observability: observability.md
       - Compliance: compliance.md
   - Applications:
-      - Monolith: monolith.md
       - Frontend: frontend.md
+      - Monolith: monolith.md
       - Analytics: analytics.md
-      - Media: media.md
-      - Video: video.md
       - Video Processing: video-processing.md
   - DevOps:
       - CI/CD: ci-cd.md

@@ -20,12 +20,12 @@ Each application component (monolith, microservices, frontend) has its own pipel
 
 ## Tools Used
 
-- **Source Control**: GitHub / Bitbucket.
-- **CI/CD Engine**: GitHub Actions, Jenkins, or GitLab CI.
-- **Container Registry**: Amazon ECR or GitHub Container Registry.
+- **Source Control**: GitHub.
+- **CI/CD Engine**: GitHub Actions.
+- **Container Registry**: Amazon ECR.
 - **Infrastructure as Code**: Terraform and Helm.
-- **Secrets Management**: AWS Secrets Manager or Vault.
-- **Security**: Snyk or Trivy for vulnerability scanning.
+- **Secrets Management**: AWS Secrets Manager.
+- **Security**: Trivy for vulnerability scanning.
 
 ## Deployment Targets
 
@@ -38,7 +38,7 @@ Each application component (monolith, microservices, frontend) has its own pipel
 
 - Immutable deployments via containerization.
 - Rollbacks enabled via Helm revision history.
-- Artifact versioning using Git commit hashes or semantic versions.
+- Artifact versioning using Git commit hashes.
 - Notifications via Slack or email on pipeline events.
 
 ---
